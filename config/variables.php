@@ -62,4 +62,9 @@ $vista_extension = 'Vista.php';
 */
 $controlador_extension = 'Controlador.php';
 
+/**
+ * Array que guarda errores en tiempo de ejecucion
+ * @global array $errores
+ */
+$errores = array();
 ?>

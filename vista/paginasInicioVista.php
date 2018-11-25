@@ -64,7 +64,7 @@ session_start();
                         <li><a href="paginas/experienciasH.php">Experiencias</a></li>
                         <li><a href="paginas/catalogo.php">Catálogo</a></li>
                         <?php
-                        include("sistemas/sistema_login/manejador_sesiones.php");
+                        include("libs/manejador_sesiones.php");
                         $menu = get_Menu();
 
                         foreach( $menu as $opcion => $link){
@@ -77,7 +77,7 @@ session_start();
             <div id="sesiones">
                 <?php
                 if(empty($_SESSION)){
-                    echo "<label><a href='sistemas/sistema_login/login.php'>Iniciar Sesión  </a></label>";
+                    echo "<label><a href='{$url_base}inicioSesion/iniciarSesion'>Iniciar Sesión  </a></label>";
                     echo "<label><a href='sistemas/sistema_signup/signup.php'> Registrarse</a></label>";
                 }else{
                     echo "<label>Bienvenido ".$_SESSION['nombre'] ." </label>";
