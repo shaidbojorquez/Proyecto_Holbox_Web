@@ -41,6 +41,8 @@ session_start();
             }
         </style>
         <title>Inicio</title>
+    
+        <script src="resources/js/autologout.js"></script>
     </head>
     <body>
         <header class="header-general">
