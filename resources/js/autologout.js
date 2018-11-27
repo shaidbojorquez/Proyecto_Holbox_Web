@@ -13,11 +13,11 @@ $(function()
 
     function timeCompare(timeString)
     {
-        var maxMinutes  = 1;  //GREATER THEN 1 MIN.
+        var maxMinutes  = 30;  //GREATER THEN 1 MIN.
         var currentTime = new Date();
         var pastTime    = new Date(timeString);
         var timeDiff    = currentTime - pastTime;
-        var minPast     = Math.floor( (timeDiff/60000) ); 
+        var minPast     = ( (timeDiff/60000) ); 
 
         if( minPast > maxMinutes)
         {
